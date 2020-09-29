@@ -7,6 +7,7 @@ use Attribute;
 use Reflector;
 use ReflectionClass;
 use ReflectionMethod;
+use Psr\Container\ContainerInterface;
 
 /**
  * 注解类
@@ -16,7 +17,7 @@ class Annotation
     /**
      * 构造函数
      */
-    public function __construct(protected Container $container)
+    public function __construct(protected ContainerInterface $container)
     {}
 
     /**
