@@ -1,8 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace iguoji;
+namespace Minimal\Annotation;
 
+/**
+ * 注解接口
+ */
 interface AnnotationInterface
 {
     /**
