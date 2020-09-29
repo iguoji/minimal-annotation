@@ -1,0 +1,15 @@
+{
+    "name": "iguoji/minimal-annotation",
+    "description": "php annotation",
+    "keywords": ["annotation"],
+    "homepage": "https://github.com/iguoji/minimal-annotation",
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Minimal\\Annotation\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
