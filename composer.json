@@ -1,5 +1,6 @@
 {
     "name": "iguoji/minimal-annotation",
+    "type": "library",
     "description": "php annotation",
     "keywords": ["annotation"],
     "homepage": "https://github.com/iguoji/minimal-annotation",
