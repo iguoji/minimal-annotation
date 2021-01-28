@@ -113,7 +113,7 @@ class Annotation
 
             // 创建该对象所属类的实例
             if ($context['class'] && !isset($context['instance'])) {
-                $context['instance'] = $this->container->make($context['class']);
+                $context['instance'] = $this->container->get($context['class']);
             }
 
             // 注解的类名、标签、参数
