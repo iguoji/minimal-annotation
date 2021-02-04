@@ -6,7 +6,7 @@
     "homepage": "https://github.com/iguoji/minimal-annotation",
     "require": {
         "php": ">=8.0.0",
-        "psr/container": "1.0.0"
+        "iguoji/minimal-container": "dev-master"
     },
     "autoload": {
         "psr-4": {

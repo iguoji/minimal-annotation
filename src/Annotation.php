@@ -7,7 +7,7 @@ use Attribute;
 use Reflector;
 use ReflectionClass;
 use ReflectionMethod;
-use Psr\Container\ContainerInterface;
+use Minimal\Container\Container;
 
 /**
  * 注解类
@@ -17,7 +17,7 @@ class Annotation
     /**
      * 构造函数
      */
-    public function __construct(protected ContainerInterface $container)
+    public function __construct(protected Container $container)
     {
     }
 
@@ -120,7 +120,7 @@ class Annotation
             $annoClass = $attr->getName();
             $annoTag = substr($annoClass, strrpos($annoClass, '\\') + 1);
             $builtInClass = 'Minimal\\Annotations\\' . $annoTag;
-            $annoTag = strtolower($annoTag);
+            $annoTag = lcfirst($annoTag);
             $annoArgs = $attr->getArguments();
 
             // 目的是内置注解，因为用户没有Use，所以附带了用户的命名空间
