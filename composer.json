@@ -6,7 +6,7 @@
     "homepage": "https://github.com/iguoji/minimal-annotation",
     "license": "Apache-2.0",
     "require": {
-        "php": ">=8.0.0",
+        "php": "^8.0",
         "iguoji/minimal-container": "dev-master"
     },
     "autoload": {
